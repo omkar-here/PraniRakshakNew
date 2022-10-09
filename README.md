@@ -102,11 +102,6 @@ Open a web browser and go to
 http://localhost:3000
 ```
 
-# Contributors
-
-* Amurto Basu [@amurto](https://github.com/amurto)
-* Shubham Mishra [@mishrashubham17](https://github.com/mishrashubham17)
-* Sarvesh Kulkarni [@Sarvesh-Kulkarni](https://github.com/Sarvesh-Kulkarni)
 
 # License
 
