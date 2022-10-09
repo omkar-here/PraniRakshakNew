@@ -3,7 +3,6 @@
 # Jeev Rakshak
 Wildlife Species Identification using client-side Neural Networks
 
-You can view the demo [here](https://amurto.github.io/jeev-rakshak/).
 
 ![Jeev Rakshak Demo](templates/demo.gif)
 
