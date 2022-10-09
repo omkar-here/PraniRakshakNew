@@ -56,7 +56,15 @@ We have implemented the following features as a part of this system:
 * These two models were converted into JavaScript supported GraphModels using the [Tensorflowjs Convertor](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter).
 * A React web app which can process input images and videos as well as a Realtime feature which uses the device camera to process frames and display the result on a canvas.
 * The models for classification and detection have a size of 8.6 MB and 6 mB respectively, which it makes it easy and faster to load. The models are saved in the Indexed DB after loading them for the first time.
- 
+# Website
+![Image of ](templates/JR-1.PNG)
+![Image of Landing](templates/JR-2.PNG)
+![Image of Landing](templates/JR-3.PNG)
+![Image of Landing](templates/JR-4.PNG)
+![Image of Landing](templates/JR-5.PNG)
+![Image of Landing](templates/JR-6.PNG)
+![Image of Landing](templates/Polar.PNG)
+
 ### Image Classification
 ![Image of Landing](templates/ic.png)
 
@@ -103,9 +111,4 @@ http://localhost:3000
 ```
 
 
-# License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[MIT License Link](https://github.com/amurto/jeev-rakshak/blob/master/LICENSE)
-"# Jeev-Rakshak" 
