@@ -87,7 +87,7 @@ Install Node.js and npm using the link above. Follow instructions on their respe
 
 Clone the repository
 ```bash
-git clone https://github.com/amurto/jeev-rakshak.git
+git clone https://github.com/Omkar-here/Prani-Rakshak.git
 ```
 
 Install all the dependencies
