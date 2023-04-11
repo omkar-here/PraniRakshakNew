@@ -1,3 +1,9 @@
+import 'jquery/dist/jquery';
+import 'popper.js/dist/umd/popper';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import React, { useState, useCallback } from 'react';
 import * as tf from '@tensorflow/tfjs';
 import { ModelContext } from './detection/context/model-context';

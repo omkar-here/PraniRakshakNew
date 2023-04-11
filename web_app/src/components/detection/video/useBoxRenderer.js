@@ -4,8 +4,12 @@ import { useDimension } from '../utils/dimension-hook';
 
 const SCORE_DIGITS = 4
 
+const arr=['giraffe','elephant','bear','zebra']
 const getLabelText = (prediction) => {
     const scoreText = prediction.score.toFixed(SCORE_DIGITS)
+    const newArr=arr.forEach(j=>j===prediction.class)
+    if(newArr.length!=0) console.log('Working')
+    
     return prediction.class + ', score: ' + scoreText
 }
 

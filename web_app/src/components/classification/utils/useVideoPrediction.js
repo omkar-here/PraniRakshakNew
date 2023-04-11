@@ -1,6 +1,14 @@
 import { useEffect } from 'react';
 import * as tf from '@tensorflow/tfjs';
+import React from 'react';
+import sendEmail from '../../Email';
+import emailjs from '@emailjs/browser'
 
+  
+      // emailjs.send('service_733qcbg','template_xl6nmur','form_data','zWK7zkN8BO8E6tG-X')
+    
+  
+  
 const detectFrame = async (model, labels, videoRef, resultRef) => {
     try {
         const batched = tf.tidy(() => {
@@ -25,6 +33,23 @@ const detectFrame = async (model, labels, videoRef, resultRef) => {
             
         finalScores.sort((a, b) => b.score - a.score);
         resultRef.current.innerHTML = finalScores[0].label + ' ' + finalScores[0].score
+        const count=1;
+        if(finalScores[0].label==='Tiger' || finalScores[0].label==='Lion'||finalScores[0].label==='Elephant'||finalScores[0].labelsel==='Bear'){
+            if(count>0){
+            console.log('Tigerr')
+            var templateParams = {
+                animals: finalScores[0].label
+            };
+             
+            emailjs.send('service_733qcbg','template_xl6nmur', templateParams,'zWK7zkN8BO8E6tG-X')
+                .then(function(response) {
+                   console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                   console.log('FAILED...', error);
+                });
+            }
+            count--;
+        }
         requestAnimationFrame(() => {
             detectFrame(model, labels, videoRef, resultRef)
         })

@@ -7,6 +7,7 @@ import upload from '../utils/upload.png';
 
 const Video = () => {
     const { model, labels } = useContext(ModelContext);
+   
     const dimensions = useDimension();
     const [frame, setFrame] = useState();
     const [videoLoaded, setVideoLoaded] = useState(false);
